@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dessert Recipes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #fff5e6; }
+    .recipe-card { transition: transform 0.3s, box-shadow 0.3s; }
+    .recipe-card:hover { transform: scale(1.05); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+    .fade-in { opacity: 0; animation: fadeIn 1s forwards; }
+    @keyframes fadeIn { to { opacity: 1; } }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Food Blog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+        <li class="nav-item"><a class="nav-link" href="tips.html">Cooking Tips</a></li>
+        <li class="nav-item"><a class="nav-link" href="videos.html">Video Tutorials</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Dessert Recipes -->
+<div class="container mb-5">
+  <h2 class="text-center mb-4 fade-in">Dessert Recipes</h2>
+  <div class="row g-4">
+
+    <!-- Chocolate Cake -->
+    <div class="col-md-4 fade-in" style="animation-delay:0.2s;">
+      <div class="card recipe-card">
+        <img src="images/CHOCOLATE_CAKE.png" class="card-img-top" alt="Chocolate Cake">
+        <div class="card-body">
+          <h5 class="card-title">Chocolate Cake</h5>
+          <p class="card-text">Rich and moist cake perfect for dessert.</p>
+          <a href="recipe3.html" class="btn btn-primary">View Recipe</a>
+          <a href="videos.html" class="btn btn-outline-secondary btn-sm">Watch Tutorial</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

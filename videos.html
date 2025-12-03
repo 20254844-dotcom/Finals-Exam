@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Tutorials - Food Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #fff5e6; }
+    .video-card { transition: transform 0.3s, box-shadow 0.3s; }
+    .video-card:hover { transform: scale(1.03); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+    .fade-in { opacity: 0; animation: fadeIn 1s forwards; }
+    @keyframes fadeIn { to { opacity: 1; } }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Food Blog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+        <li class="nav-item"><a class="nav-link" href="tips.html">Cooking Tips</a></li>
+        <li class="nav-item"><a class="nav-link" href="videos.html">Video Tutorials</a></li>
+        <li class="nav-item"><a class="nav-link" href="about_and_contacts.html">About & Contacts</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Video Tutorials Section -->
+<div class="container mb-5">
+  <h2 class="text-center mb-4 fade-in">Video Tutorials</h2>
+  <div class="row g-4">
+
+    <!-- Video 1: Creamy Pasta -->
+    <div class="col-md-6 fade-in" style="animation-delay:0.2s;">
+      <div class="card video-card p-3">
+        <h5>Creamy Pasta Tutorial</h5>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/XsipAaImDVc" title="White Sauce Pasta – Creamy & Cheesy Recipe" allowfullscreen></iframe>
+        </div>
+        <a href="recipe1.html" class="btn btn-primary mt-2">View Recipe</a>
+      </div>
+    </div>
+
+    <!-- Video 2: Cheesy Burger -->
+    <div class="col-md-6 fade-in" style="animation-delay:0.4s;">
+      <div class="card video-card p-3">
+        <h5>Cheesy Burger Tutorial</h5>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/aBMFtgfY_HA" title="Easy Cheesy Beef Burger Recipe" allowfullscreen></iframe>
+        </div>
+        <a href="recipe2.html" class="btn btn-primary mt-2">View Recipe</a>
+      </div>
+    </div>
+
+    <!-- Video 3: Chocolate Cake -->
+    <div class="col-md-6 fade-in" style="animation-delay:0.6s;">
+      <div class="card video-card p-3">
+        <h5>Chocolate Cake Tutorial</h5>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/vI5w-fK25w4" title="Village Chocolate Cake Recipe" allowfullscreen></iframe>
+        </div>
+        <a href="recipe3.html" class="btn btn-primary mt-2">View Recipe</a>
+      </div>
+    </div>
+
+    <!-- Video 4: Grilled Chicken Salad -->
+    <div class="col-md-6 fade-in" style="animation-delay:0.8s;">
+      <div class="card video-card p-3">
+        <h5>Grilled Chicken Salad Tutorial</h5>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/VPOA5-RsdRY" title="GRILLED CHICKEN SALAD Recipe" allowfullscreen></iframe>
+        </div>
+        <a href="recipe4.html" class="btn btn-primary mt-2">View Recipe</a>
+      </div>
+    </div>
+
+    <!-- Video 5: Veggie Stir-Fry -->
+    <div class="col-md-6 fade-in" style="animation-delay:1s;">
+      <div class="card video-card p-3">
+        <h5>Veggie Stir-Fry Tutorial</h5>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/jbVCuO0D_YY" title="7 Simple and Easy Stir-Fried Vegetable Recipes" allowfullscreen></iframe>
+        </div>
+        <a href="recipe5.html" class="btn btn-primary mt-2">View Recipe</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
